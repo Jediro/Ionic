@@ -17,7 +17,11 @@ export class HomePage {
     this.navCtrl.push(NewPage)
   }
 
-  recoverPassword() {
+  attemptLogIn() {
     
+  }
+
+  recoverPassword() {
+
   }
 }

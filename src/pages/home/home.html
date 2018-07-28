@@ -6,22 +6,25 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  Esto es un hola mundo para Ionic. Aquí podemos empezar a ver esta estructura para apps híbridas. 
+<ion-content class= "page-home" padding>
+  Esto es un hola mundo para Ionic. Aquí podemos empezar a ver esta estructura para apps híbridas.
   <p>
-    Las <a href="http://ionicframework.com/docs/v2">docs</a> serán la guía.
+    Las
+    <a href="http://ionicframework.com/docs/v2">docs</a> serán la guía.
   </p>
 
-<h2>Iniciar sesión</h2>
+  <h2>Iniciar sesión</h2>
 
-<p>Usuario</p>
+  <p>Usuario</p>
 
-<ion-input block type="text" [(ngModel)] = "username" name="username"></ion-input>
+  <input type="text" [(ngModel)]="username" name="username" />
 
-<p>Contraseña</p>
+  <p>Contraseña</p>
 
-<ion-input block type="password" [(ngModel)] = "password" name="password"></ion-input>
+  <input type="password" [(ngModel)]="password" name="password" />
 
-<ion-content id="recPass" (click) = "recoverPassword()">Recuperar contraseña</ion-content>
+  <button ion-button block (click)="attemptLogIn()"> Iniciar sesión</button>
+
+  <ion-content id="recPass" (click)="recoverPassword()">Recuperar contraseña</ion-content>
 
 </ion-content>

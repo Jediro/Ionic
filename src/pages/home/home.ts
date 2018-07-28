@@ -16,4 +16,8 @@ export class HomePage {
   launchNewPage() {
     this.navCtrl.push(NewPage)
   }
+
+  recoverPassword() {
+    
+  }
 }
